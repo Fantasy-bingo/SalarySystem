@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'employee',  # 员工管理
     'salary',  # 薪资管理
     'travel',  # 出差管理
+
 ]
 
 MIDDLEWARE = [
