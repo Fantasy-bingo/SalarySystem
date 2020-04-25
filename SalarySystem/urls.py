@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from department.models import DeptInfo
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
+
+# 部门url
+urlpatterns += [
+    # url(r'operator/deptinfolist')
+]
+
+
