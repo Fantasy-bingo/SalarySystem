@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from department import views
+from SalarySystem import views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^department/', include('department.urls')),
+    url(r'^hello/', views.index_view),
+    url(r'^dept/', include('department.urls'))
 ]
